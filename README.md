@@ -3,6 +3,9 @@ VBS-Obfuscator-in-Python
 
 VBScript obfuscation to allow PenTesters bypass countermeasures.
 
+This script has been modified from the original to allow for use inside Word/Excel macros. I found that the original script produces output unusable in Word/Excel macros due to line length. This breaks the payload up into smaller chunks to allow use in macros (WIP)
+
+Also added a few code checks, since I found that popular payload generator tools (ie Empire) sometimes generate VBA code which could not run as a VBS (also WIP)
 
 Sample Script Output
 ========================
